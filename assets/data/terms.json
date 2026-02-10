@@ -1,17 +1,17 @@
 [
-  {
-    "term": "Git",
-    "definition": "Sistem pengontrol versi untuk melacak perubahan pada kode.",
-    "category": "Tools"
-  },
-  {
-    "term": "Repository",
-    "definition": "Gudang penyimpanan digital untuk file proyek.",
-    "category": "Concept"
-  },
-  {
-    "term": "Bug",
-    "definition": "Kesalahan atau cacat dalam perangkat lunak.",
-    "category": "General"
-  }
+  { "term": "API", "definition": "Jembatan komunikasi antar aplikasi.", "category": "Coding" },
+  { "term": "Bandwidth", "definition": "Kapasitas maksimal jalur komunikasi data.", "category": "Jaringan" },
+  { "term": "Bug", "definition": "Eror atau kesalahan pada kode program.", "category": "Coding" },
+  { "term": "Cloud", "definition": "Server internet yang menyimpan data secara remote.", "category": "Internet" },
+  { "term": "Deploy", "definition": "Proses meluncurkan aplikasi ke server agar bisa diakses.", "category": "Coding" },
+  { "term": "DNS", "definition": "Buku telepon internet yang mengubah domain menjadi IP.", "category": "Internet" },
+  { "term": "Frontend", "definition": "Bagian aplikasi yang berinteraksi langsung dengan pengguna.", "category": "Coding" },
+  { "term": "Gaskeun", "definition": "Bahasa gaul untuk 'Ayo lakukan sekarang'.", "category": "Gaul" },
+  { "term": "Ghosting", "definition": "Menghilang tiba-tiba tanpa kabar.", "category": "Gaul" },
+  { "term": "IP Address", "definition": "Alamat unik komputer di jaringan.", "category": "Jaringan" },
+  { "term": "Kernel", "definition": "Jantung dari sistem operasi.", "category": "Sistem" },
+  { "term": "Latency", "definition": "Waktu jeda pengiriman data (Ping).", "category": "Jaringan" },
+  { "term": "Open Source", "definition": "Kode sumber yang boleh dimodifikasi siapa saja.", "category": "Umum" },
+  { "term": "Push", "definition": "Mengirim perubahan kode ke repositori pusat.", "category": "Coding" },
+  { "term": "Salty", "definition": "Bahasa gaul untuk rasa kesal atau nyinyir.", "category": "Gaul" }
 ]

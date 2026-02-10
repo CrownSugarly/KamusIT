@@ -9,9 +9,19 @@
 </head>
 <body>
     <header>
-        <img src="assets/img/logo.svg" alt="Logo KamusIT" class="logo">
+        <div class="logo-container">
+            <img src="assets/img/logo.svg" alt="Logo">
+        </div>
         <h1>KamusIT</h1>
-        <input type="text" id="searchBox" placeholder="Cari istilah (misal: Git)...">
+        <div id="stats" class="stats-bar">Memuat data...</div>
+        <input type="text" id="searchBox" placeholder="Cari kata kunci atau kategori...">
+        
+        <div class="filter-group">
+            <button class="filter-btn active" onclick="filterByCategory('All')">Semua</button>
+            <button class="filter-btn" onclick="filterByCategory('Coding')">Coding</button>
+            <button class="filter-btn" onclick="filterByCategory('Jaringan')">Jaringan</button>
+            <button class="filter-btn" onclick="filterByCategory('Gaul')">Gaul</button>
+        </div>
     </header>
 
     <main id="dictionary-container">
