@@ -1,0 +1,17 @@
+[
+  {
+    "term": "Git",
+    "definition": "Sistem pengontrol versi untuk melacak perubahan pada kode.",
+    "category": "Tools"
+  },
+  {
+    "term": "Repository",
+    "definition": "Gudang penyimpanan digital untuk file proyek.",
+    "category": "Concept"
+  },
+  {
+    "term": "Bug",
+    "definition": "Kesalahan atau cacat dalam perangkat lunak.",
+    "category": "General"
+  }
+]

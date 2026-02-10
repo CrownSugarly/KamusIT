@@ -1,0 +1,8 @@
+body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 0; text-align: center; }
+header { background: #2c3e50; color: white; padding: 20px; }
+.logo { width: 50px; vertical-align: middle; }
+input { padding: 10px; width: 80%; max-width: 400px; margin-top: 10px; border-radius: 5px; border: none; }
+#dictionary-container { padding: 20px; max-width: 800px; margin: auto; display: grid; gap: 15px; }
+.card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: left; }
+.term { color: #3498db; margin: 0 0 5px; }
+.category { font-size: 0.8em; background: #eee; padding: 2px 8px; border-radius: 4px; color: #555; }
