@@ -28,6 +28,20 @@
   { "term": "Termux", "definition": "Emulator terminal untuk Android yang memungkinkan menjalankan lingkungan Linux tanpa perlu root.", "category": "Sistem" },
   { "term": "WinBox", "definition": "Aplikasi berbasis GUI yang digunakan untuk mengkonfigurasi sistem operasi MikroTik RouterOS secara mudah.", "category": "Jaringan" },
   { "term": "Windows", "definition": "Sistem operasi buatan Microsoft yang paling banyak digunakan oleh pengguna PC di seluruh dunia.", "category": "Sistem" },
+  { "term": "XAMPP", "definition": "Paket software gratis yang berisi Apache, MySQL, dan PHP untuk membuat server lokal di komputer sendiri.", "category": "Tools" },
+  { "term": "Android", "definition": "Sistem operasi berbasis Linux yang dirancang untuk perangkat seluler layar sentuh seperti ponsel pintar dan tablet.", "category": "Sistem" },
+  { "term": "BIOS", "definition": "Basic Input Output System; software pertama yang dijalankan komputer saat dinyalakan untuk inisialisasi hardware.", "category": "Sistem" },
+  { "term": "Coding", "definition": "Proses menulis instruksi untuk komputer menggunakan bahasa pemrograman agar bisa menjalankan fungsi tertentu.", "category": "Coding" },
+  { "term": "Database", "definition": "Kumpulan data yang terorganisir secara digital dan disimpan dalam sistem komputer.", "category": "Database" },
+  { "term": "Linux", "definition": "Keluarga sistem operasi open-source yang sangat populer di kalangan developer dan server.", "category": "Sistem" },
+  { "term": "MacOS", "definition": "Sistem operasi eksklusif yang dikembangkan oleh Apple untuk komputer Macintosh.", "category": "Sistem" },
+  { "term": "Mikrotik", "definition": "Perangkat lunak dan keras yang digunakan untuk keperluan administrasi jaringan komputer.", "category": "Jaringan" },
+  { "term": "MySQL", "definition": "Sistem manajemen basis data relasional open-source yang menggunakan SQL sebagai bahasa pengaturnya.", "category": "Database" },
+  { "term": "Repo (Repositori)", "definition": "Tempat penyimpanan digital (seperti di GitHub) untuk menyimpan kode sumber dan riwayat perubahannya.", "category": "Coding" },
+  { "term": "Suspend", "definition": "Mode hemat daya di mana komputer mematikan sebagian besar komponen tapi tetap menyimpan data di RAM agar bisa menyala cepat.", "category": "Sistem" },
+  { "term": "Terminal", "definition": "Antarmuka berbasis teks yang digunakan untuk memberikan perintah langsung ke sistem operasi.", "category": "Sistem" },
+  { "term": "Termux", "definition": "Emulator terminal untuk Android yang memungkinkan menjalankan lingkungan Linux tanpa perlu root.", "category": "Sistem" },
+  { "term": "WinBox", "definition": "Aplikasi berbasis GUI yang digunakan untuk mengkonfigurasi sistem operasi MikroTik RouterOS secara mudah.", "category": "Jaringan" },
+  { "term": "Windows", "definition": "Sistem operasi buatan Microsoft yang paling banyak digunakan oleh pengguna PC di seluruh dunia.", "category": "Sistem" },
   { "term": "XAMPP", "definition": "Paket software gratis yang berisi Apache, MySQL, dan PHP untuk membuat server lokal di komputer sendiri.", "category": "Tools" }
-
 ]
