@@ -1,146 +1,160 @@
 :root {
-    --primary: #3498db;
-    --dark: #1a1a2e;
-    --glass: rgba(255, 255, 255, 0.1);
-    --text: #ffffff;
+    --primary: #00d2ff;
+    --secondary: #3a7bd5;
+    --dark: #0f172a;
+    --glass: rgba(15, 23, 42, 0.8);
+    --card-bg: rgba(255, 255, 255, 0.05);
 }
 
+* { box-sizing: border-box; }
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle at top, #16213e, #0f3460);
-    color: var(--text);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: radial-gradient(circle at top right, #1e293b, #0f172a);
+    color: #f8fafc;
     margin: 0;
-    min-height: 100vh;
+    line-height: 1.6;
 }
 
 header {
-    padding: 40px 20px;
-    text-align: center;
-    background: var(--glass);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
-    position: sticky;
+    position: fixed; /* Berubah jadi fixed agar lebih stabil */
     top: 0;
-    z-index: 100;
+    width: 100%;
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
 }
 
 .logo-container img {
-    width: 60px;
-    filter: drop-shadow(0 0 10px var(--primary));
-    margin-bottom: 10px;
+    width: 50px;
+    filter: drop-shadow(0 0 8px var(--primary));
 }
 
-h1 { font-size: 2.5em; margin: 0; letter-spacing: 2px; }
+h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    background: linear-gradient(to right, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    text-transform: uppercase;
+}
 
 #searchBox {
-    margin-top: 20px;
-    padding: 12px 20px;
-    width: 90%;
-    max-width: 500px;
-    border-radius: 25px;
-    border: 2px solid var(--primary);
-    background: rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 600px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.05);
     color: white;
-    font-size: 16px;
-    outline: none;
-    transition: 0.3s;
+    font-size: 1rem;
+    margin: 15px 0;
+    transition: all 0.3s ease;
 }
 
 #searchBox:focus {
-    box-shadow: 0 0 15px var(--primary);
-    width: 95%;
-}
-
-/* Statistik & Filter */
-.stats-bar {
-    margin: 20px auto;
-    font-size: 0.9em;
-    opacity: 0.8;
-}
-
-/* Grid Container */
-#dictionary-container {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* Card Style (Glassmorphism) */
-.card {
-    background: var(--glass);
-    padding: 20px;
-    border-radius: 15px;
-    border: 1px solid rgba(255,255,255,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-    overflow: hidden;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    background: rgba(255,255,255,0.15);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.term { color: var(--primary); font-size: 1.4em; margin-bottom: 10px; }
-.category {
-    font-size: 0.7em;
-    background: var(--primary);
-    color: white;
-    padding: 3px 10px;
-    border-radius: 10px;
-    float: right;
-}
-
-.definition { line-height: 1.6;
+    outline: none;
+    border-color: var(--primary);
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.3);
 }
 
 .filter-group {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .filter-btn {
-    background: var(--glass);
-    border: 1px solid var(--primary);
-    color: white;
-    padding: 8px 15px;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #94a3b8;
+    padding: 6px 14px;
     border-radius: 20px;
     cursor: pointer;
-    transition: 0.3s;
+    font-size: 0.85rem;
+    transition: all 0.2s;
 }
 
 .filter-btn:hover, .filter-btn.active {
     background: var(--primary);
-    box-shadow: 0 0 10px var(--primary);
+    color: var(--dark);
+    border-color: var(--primary);
+    font-weight: 600;
 }
 
+/* BAGIAN PENTING: Jarak Konten */
 #dictionary-container {
-    padding: 30px;
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
     max-width: 1200px;
-    margin: 80px auto 0 auto; /* TAMBAHKAN margin-top 80px (sesuaikan dengan tinggi header) */
+    margin: 320px auto 50px auto; /* Margin top tinggi agar tidak tertutup */
 }
 
-/* Tambahan agar scroll lebih smooth */
-html {
-    scroll-behavior: smooth;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
+/* Card Styling */
 .card {
-    /* ... kode lama kamu ... */
-    animation: fadeIn 0.5s ease forwards;
+    background: var(--card-bg);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 25px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.08);
+    border-color: var(--primary);
+}
+
+.term {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin: 0 0 10px 0;
+}
+
+.category {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: rgba(0, 210, 255, 0.1);
+    color: var(--primary);
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.definition {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    color: #64748b;
+}
+
+/* Responsif untuk HP */
+@media (max-width: 600px) {
+    #dictionary-container { margin-top: 380px; }
+    h1 { font-size: 1.4rem; }
 }
